@@ -369,6 +369,19 @@ function salat_times_options_page() {
 								</p>
 							</td>
 						</tr>
+						<tr valign="top">
+							<td><label for="width">Widget Width:</label>
+							</td>
+							<td>
+								<select name="st_options[width]">
+									<option value="300px" <?php if($st_options['width']=="300px") { echo " selected"; } ?>>300px</option>
+									<option value="400px" <?php if($st_options['width']=="400px") { echo " selected"; } ?>>400px</option>
+									<option value="500px" <?php if($st_options['width']=="500px") { echo " selected"; } ?>>500px</option>
+									<option value="100%" <?php if($st_options['width']=="100%") { echo " selected"; } ?>>100% (Responsive)</option>
+								</select>
+								<p class="description">Select a fixed width or use 100% for responsive layout. For fixed widths, the widget will become scrollable on smaller screens.</p>
+							</td>
+						</tr>
 					</table>
 				</div>
 			</div>
@@ -382,12 +395,13 @@ function salat_times_options_page() {
 							</td>
 							<td>
 								<select name="st_options[scheme]" id="scheme">
-									<option value="#313232 #ffffff #181818 #ffffff #313232 #585858 #ffffff" <?php if($st_options[ 'scheme']=="#313232 #ffffff #181818 #ffffff #313232 #585858 #ffffff" ) { echo " selected"; } ?>>Black</option>
-									<option value="#4189dd #ffffff #4472C4 #ffffff #B4C6E7 #D9E2F3 #000000" <?php if($st_options[ 'scheme']=="#4189dd #ffffff #4472C4 #ffffff #B4C6E7 #D9E2F3 #000000" ) { echo " selected"; } ?>>Blue</option>
-									<option value="#4189dd #ffffff #5b9bd5 #ffffff #bdd6ee #deeaf6 #000000" <?php if($st_options[ 'scheme']=="#4189dd #ffffff #5b9bd5 #ffffff #bdd6ee #deeaf6 #000000" ) { echo " selected"; } ?>>Light Blue</option>
-									<option value="#778496 #ffffff #65707f #ffffff #dddcdc #f0f0f0 #000000" <?php if($st_options[ 'scheme']=="#778496 #ffffff #65707f #ffffff #dddcdc #f0f0f0 #000000" ) { echo " selected"; } ?>>Gray</option>
-									<option value="#48ae03 #ffffff #70ad47 #ffffff #c5e0b3 #e2efd9 #000000" <?php if($st_options[ 'scheme']=="#48ae03 #ffffff #70ad47 #ffffff #c5e0b3 #e2efd9 #000000" ) { echo " selected"; } ?>>Green</option>
-									<option value="#ee6204 #ffffff #ed7d31 #ffffff #f7caac #fbe4d5 #000000" <?php if($st_options[ 'scheme']=="#ee6204 #ffffff #ed7d31 #ffffff #f7caac #fbe4d5 #000000" ) { echo " selected"; } ?>>Orange</option>
+									<option value="#6c1638 #ffffff #6c1638 #ffffff #e3b7c7 #f1dbe3 #000000" <?php if($st_options['scheme']=="#6c1638 #ffffff #6c1638 #ffffff #e3b7c7 #f1dbe3 #000000") { echo " selected"; } ?>>Burgundy</option>
+									<option value="#313232 #ffffff #181818 #ffffff #313232 #585858 #ffffff" <?php if($st_options['scheme']=="#313232 #ffffff #181818 #ffffff #313232 #585858 #ffffff") { echo " selected"; } ?>>Black</option>
+									<option value="#4189dd #ffffff #4472C4 #ffffff #B4C6E7 #D9E2F3 #000000" <?php if($st_options['scheme']=="#4189dd #ffffff #4472C4 #ffffff #B4C6E7 #D9E2F3 #000000") { echo " selected"; } ?>>Blue</option>
+									<option value="#4189dd #ffffff #5b9bd5 #ffffff #bdd6ee #deeaf6 #000000" <?php if($st_options['scheme']=="#4189dd #ffffff #5b9bd5 #ffffff #bdd6ee #deeaf6 #000000") { echo " selected"; } ?>>Light Blue</option>
+									<option value="#778496 #ffffff #65707f #ffffff #dddcdc #f0f0f0 #000000" <?php if($st_options['scheme']=="#778496 #ffffff #65707f #ffffff #dddcdc #f0f0f0 #000000") { echo " selected"; } ?>>Gray</option>
+									<option value="#48ae03 #ffffff #70ad47 #ffffff #c5e0b3 #e2efd9 #000000" <?php if($st_options['scheme']=="#48ae03 #ffffff #70ad47 #ffffff #c5e0b3 #e2efd9 #000000") { echo " selected"; } ?>>Green</option>
+									<option value="#ee6204 #ffffff #ed7d31 #ffffff #f7caac #fbe4d5 #000000" <?php if($st_options['scheme']=="#ee6204 #ffffff #ed7d31 #ffffff #f7caac #fbe4d5 #000000") { echo " selected"; } ?>>Orange</option>
 								</select>
 							</td>
 						</tr>
@@ -415,11 +429,6 @@ function salat_times_options_page() {
 									<option value="right" <?php if($st_options[ 'walign']=="right" ) { echo " selected"; } ?>>Right</option>
 								</select>
 							</td>
-						</tr>
-						<tr valign="top">
-							<td><label for="width">Table width:</label>
-							</td>
-							<td colspan="3"><input id="width" type="text" maxlength="5" name="st_options[width]" value="<?php echo esc_html($st_options['width']); ?>"/> (Example: 90%, 200px etc.)</td>
 						</tr>
 						<tr valign="top">
 							<td><label for="dir">Table/Text direction:</label>

@@ -1,0 +1,94 @@
+/* Elementor compatibility layer */
+.elementor-widget-container .salat-times-container,
+.elementor .salat-times-container,
+.salat-times-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.elementor-widget-container .salat-times-widget,
+.elementor .salat-times-widget,
+.salat-times-widget {
+    box-sizing: border-box !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+.elementor-widget-container .salat-times-widget table,
+.elementor .salat-times-widget table,
+.salat-times-widget table {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    border: none !important;
+    table-layout: fixed !important;
+    border-spacing: 0 !important;
+}
+
+.elementor-widget-container .salat-times-widget td,
+.elementor .salat-times-widget td,
+.salat-times-widget td {
+    padding: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    word-break: break-word !important;
+    vertical-align: middle !important;
+    line-height: 1.4 !important;
+    float: none !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+/* Override Elementor's default table styles */
+.elementor-widget-container .salat-times-widget table,
+.elementor-widget-container .salat-times-widget tbody,
+.elementor-widget-container .salat-times-widget tr,
+.elementor-widget-container .salat-times-widget td {
+    display: revert !important;
+    margin: revert !important;
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .elementor-widget-container .salat-times-widget,
+    .elementor .salat-times-widget,
+    .salat-times-widget {
+        font-size: 13px !important;
+    }
+    
+    .elementor-widget-container .salat-times-widget td,
+    .elementor .salat-times-widget td,
+    .salat-times-widget td {
+        padding: 6px !important;
+    }
+}
+
+/* Reset any theme or Elementor styles that might affect our table */
+.elementor-widget-container .salat-times-widget table,
+.elementor-widget-container .salat-times-widget tr,
+.elementor-widget-container .salat-times-widget td,
+.elementor .salat-times-widget table,
+.elementor .salat-times-widget tr,
+.elementor .salat-times-widget td,
+.salat-times-widget table,
+.salat-times-widget tr,
+.salat-times-widget td {
+    float: none !important;
+    margin: 0 !important;
+    border-spacing: 0 !important;
+    transform: none !important;
+    position: static !important;
+    z-index: auto !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
